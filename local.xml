@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="1" name="pytest" skips="0" tests="2" time="0.016"><testcase classname="newpytest" file="newpytest.py" line="5" name="test_answer" time="0.00092887878418"><failure message="assert 4 == 5
- +  where 4 = func(3)">def test_answer():
-&gt;   	assert func(3) == 5
-E    assert 4 == 5
-E     +  where 4 = func(3)
-
-newpytest.py:7: AssertionError</failure></testcase><testcase classname="newpytest" file="newpytest.py" line="8" name="test_answer2" time="0.000541925430298"></testcase></testsuite>
