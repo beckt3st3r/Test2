@@ -10,6 +10,7 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'In Deploy'
+        sh 'python temp.py'
       }
     }
     stage('Test') {
