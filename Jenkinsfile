@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'Master'
-    }
-    
-  }
+  agent any
   stages {
     stage('Build') {
       steps {
@@ -43,8 +38,5 @@ pipeline {
         junit 'local.xml'
       }
     }
-  }
-  environment {
-    Start = 'none'
   }
 }
