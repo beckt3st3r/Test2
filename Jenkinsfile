@@ -7,30 +7,5 @@ pipeline {
         echo 'In Build'
       }
     }
-    stage('Deploy') {
-      steps {
-        echo 'In Deploy'
-        sh 'python temp.py'
-      }
-    }
-    stage('Test') {
-      parallel {
-        stage('Test') {
-          steps {
-            echo 'Run Test'
-          }
-        }
-        stage('Test2') {
-          steps {
-            echo 'In Test 2'
-          }
-        }
-        stage('Test3') {
-          steps {
-            echo 'Test3'
-          }
-        }
-      }
-    }
   }
 }
