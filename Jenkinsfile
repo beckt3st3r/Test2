@@ -34,6 +34,7 @@ pipeline {
     stage('Tests complete') {
       steps {
         echo 'Done'
+        junit 'local.xml'
       }
     }
   }
