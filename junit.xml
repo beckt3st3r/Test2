@@ -1,14 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites>
-   <testsuite name="JUnitXmlReporter" errors="0" tests="0" failures="0" time="0" timestamp="2013-05-24T10:23:58" />
-   <testsuite name="JUnitXmlReporter.constructor" errors="0" skipped="0" tests="3" failures="0" time="0.006" timestamp="2013-05-24T10:23:58">
-      <properties>
-         <property name="java.vendor" value="Sun Microsystems Inc." />
-         <property name="compiler.debug" value="on" />
-         <property name="project.jdk.classpath" value="jdk.classpath.1.6" />
-      </properties>
-      <testcase classname="JUnitXmlReporter.constructor" name="should default path to an empty string" time="0.006" />
-      <testcase classname="JUnitXmlReporter.constructor" name="should default consolidate to true" time="0" />
-      <testcase classname="JUnitXmlReporter.constructor" name="should default useDotNotation to true" time="0" />
-   </testsuite>
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="2" time="0.0903">
+	<testsuite disabled="0" errors="0" failures="1" name="DirectorITG2" skipped="0" tests="2" time="0.0903">
+		<testcase name="FileCheck: DesktopNotificationCenter" time="0.045100">
+			<failure message="Invalid File 'DNC.exe'." type="failure"/>
+		</testcase>
+		<testcase name="FileCheck: PropertyServer" time="0.045200"/>
+	</testsuite>
 </testsuites>
