@@ -1,9 +1,1 @@
-<?xml version="1.0" ?>
-<testsuites disabled="0" errors="0" failures="1" tests="2" time="0.0903">
-	<testsuite disabled="0" errors="0" failures="1" name="DirectorITG2" skipped="0" tests="2" time="0.0903">
-		<testcase name="FileCheck: DesktopNotificationCenter" time="0.045100">
-			<failure message="Invalid File 'DNC.exe'." type="failure"/>
-		</testcase>
-		<testcase name="FileCheck: PropertyServer" time="0.045200"/>
-	</testsuite>
-</testsuites>
+<testsuites disabled="0" errors="0" failures="1" tests="2" time="0.6129"><testsuite disabled="0" errors="0" failures="1" name="GII_2013_R1" skipped="0" tests="2" time="0.6129"><testcase classname="Integration.FileCheck" name="DesktopNotificationCenter" time="0.045100"><failure message="Invalid File 'DNC.exe'." type="failure" /></testcase><testcase classname="Integration.FileCheck" name="PropertyServer" time="0.567800" /></testsuite></testsuites>
