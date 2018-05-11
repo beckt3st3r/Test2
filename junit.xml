@@ -1,9 +1,10 @@
 <?xml version="1.0" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="2" time="1.0881">
-	<testsuite disabled="0" errors="0" failures="0" name="FileChecks" skipped="0" tests="1" time="0.0451">
-		<testcase name="FileCheck: DesktopNotificationCenter" time="0.045100"/>
-	</testsuite>
-	<testsuite disabled="0" errors="0" failures="0" name="ProcessChecks" skipped="0" tests="1" time="1.043">
-		<testcase name="ProcessCheck: ApplicationControl" time="1.043000"/>
+<testsuites disabled="0" errors="0" failures="1" tests="3" time="0.1355">
+	<testsuite disabled="0" errors="0" failures="1" name="DirectorITG2" skipped="0" tests="3" time="0.1355">
+		<testcase name="FileCheck: DesktopNotificationCenter" time="0.045100">
+			<failure message="Invalid File 'DNC.exe'." type="failure"/>
+		</testcase>
+		<testcase name="FileCheck: PropertyServer" time="0.045200"/>
+		<testcase name="Dereks added test" time="0.045200"/>
 	</testsuite>
 </testsuites>
