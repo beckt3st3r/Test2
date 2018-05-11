@@ -6,7 +6,7 @@ pipeline {
         echo 'a1'
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         junit 'junit'
       }
