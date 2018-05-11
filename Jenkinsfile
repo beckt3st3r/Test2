@@ -8,7 +8,7 @@ pipeline {
     }
     stage('error') {
       steps {
-        junit 'junit'
+        junit 'junit.xml'
       }
     }
   }
