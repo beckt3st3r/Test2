@@ -6,5 +6,10 @@ pipeline {
         echo 'a1'
       }
     }
+    stage('') {
+      steps {
+        junit 'junit'
+      }
+    }
   }
 }
