@@ -15,7 +15,8 @@ pipeline {
         }
         stage('Param1') {
           steps {
-            build 'ParamItem1'
+            build(job: 'ParamItem1', propagate: false,
+               parameters: [string(name: 'Str2', value: String.valueOf(Str2))])
           }
         }
       }
