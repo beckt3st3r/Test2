@@ -8,35 +8,30 @@ pipeline {
             echo 'a1'
           }
         }
-        stage('error') {
+        stage('Move Results') {
           steps {
             sh 'sh moveResults.sh'
           }
         }
-        stage('sleep') {
+        stage('Param1') {
           steps {
-            sh 'sleep 180'
+            build 'ParamItem1'
           }
         }
       }
     }
-    stage('error') {
+    stage('Second') {
       parallel {
-        stage('error') {
+        stage('getResults') {
           steps {
             junit 'testResults/junit.xml'
           }
         }
-        stage('print me') {
+        stage('Param2') {
           steps {
-            sh 'echo printed'
+            build 'ParamItem2'
           }
         }
-      }
-    }
-    stage('sleep 3') {
-      steps {
-        sh 'sleep 200'
       }
     }
     stage('finish') {
@@ -44,5 +39,11 @@ pipeline {
         echo 'this'
       }
     }
+  }
+  environment {
+    Bool1 = 'true'
+    Bool2 = 'false'
+    Str1 = 'String1Test'
+    Str2 = 'String2Test'
   }
 }
