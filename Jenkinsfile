@@ -8,16 +8,40 @@ pipeline {
             echo 'a1'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             sh 'sh moveResults.sh'
+          }
+        }
+        stage('sleep') {
+          steps {
+            sh 'sleep 180'
           }
         }
       }
     }
     stage('error') {
+      parallel {
+        stage('error') {
+          steps {
+            junit 'testResults/junit.xml'
+          }
+        }
+        stage('print me') {
+          steps {
+            sh 'echo printed'
+          }
+        }
+      }
+    }
+    stage('sleep 3') {
       steps {
-        junit 'testResults/junit.xml'
+        sh 'sleep 200'
+      }
+    }
+    stage('finish') {
+      steps {
+        echo 'this'
       }
     }
   }
