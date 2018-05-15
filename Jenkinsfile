@@ -5,6 +5,7 @@ pipeline {
     Bool2 = 'false'
     Str1 = 'String1Test'
     Str2 = 'String2Test'
+    Str3 = 'NOTINTESTBUTOK'
   }
   stages {
     stage('s1') {
