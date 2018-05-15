@@ -14,9 +14,11 @@ pipeline {
           }
         }
         stage('Param1') {
+          environment {
+            Str2 = 'NOTGOOD'
+          }
           steps {
-            build(job: 'ParamItem1', propagate: false,
-               parameters: [string(name: 'Str2', value: String.valueOf(Str2))])
+            build(job: 'ParamItem1', parameters: [string(name: 'Str2', value: String.valueOf(Str2))])
           }
         }
       }
