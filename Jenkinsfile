@@ -1,5 +1,11 @@
 pipeline {
   agent any
+    environment {
+    Bool1 = 'true'
+    Bool2 = 'false'
+    Str1 = 'String1Test'
+    Str2 = 'String2Test'
+  }
   stages {
     stage('s1') {
       parallel {
@@ -42,11 +48,5 @@ pipeline {
         echo 'this'
       }
     }
-  }
-  environment {
-    Bool1 = 'true'
-    Bool2 = 'false'
-    Str1 = 'String1Test'
-    Str2 = 'String2Test'
   }
 }
