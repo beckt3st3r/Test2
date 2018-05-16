@@ -1,12 +1,5 @@
 pipeline {
   agent any
-    environment {
-    Bool1 = 'true'
-    Bool2 = 'false'
-    Str1 = 'String1Test'
-    Str2 = 'String2Test'
-    Str3 = 'NOTINTESTBUTOK'
-  }
   stages {
     stage('s1') {
       parallel {
@@ -26,8 +19,8 @@ pipeline {
           }
           steps {
             build(job: 'ParamItem1', parameters: [string(name: 'Str2', value: String.valueOf(Str2)),
-                                                  string(name: 'Str3', value: String.valueOf(Str3)),
-                                                  string(name: 'Str1', value: String.valueOf(Str1))])
+                                                              string(name: 'Str3', value: String.valueOf(Str3)),
+                                                              string(name: 'Str1', value: String.valueOf(Str1))])
           }
         }
       }
@@ -51,5 +44,12 @@ pipeline {
         echo 'this'
       }
     }
+  }
+  environment {
+    Bool1 = 'true'
+    Bool2 = 'false'
+    Str1 = 'String1Test'
+    Str2 = 'String2Test'
+    Str3 = 'NOTINTESTBUTOK'
   }
 }
