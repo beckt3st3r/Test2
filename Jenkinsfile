@@ -36,8 +36,9 @@ pipeline {
           environment {
             Str2 = 'testmetonight'
           }
+          
           steps {
-            build 'ParamItem2'
+            build(job: 'ParamItem2', parameters: [string(name: 'Str2', value: string.valueOf(Str2))])
           }
         }
       }
