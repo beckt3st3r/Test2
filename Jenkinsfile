@@ -19,8 +19,8 @@ pipeline {
           }
           steps {
             build(job: 'ParamItem1', parameters: [string(name: 'Str2', value: String.valueOf(Str2)),
-                                                              string(name: 'Str3', value: String.valueOf(Str3)),
-                                                              string(name: 'Str1', value: String.valueOf(Str1))])
+                                                                          string(name: 'Str3', value: String.valueOf(Str3)),
+                                                                          string(name: 'Str1', value: String.valueOf(Str1))])
           }
         }
       }
@@ -33,6 +33,9 @@ pipeline {
           }
         }
         stage('Param2') {
+          environment {
+            Str2 = 'testmetonight'
+          }
           steps {
             build 'ParamItem2'
           }
