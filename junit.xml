@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <testsuites disabled="0" errors="0" failures="1" tests="3" time="0.1355">
 	<testsuite disabled="0" errors="0" failures="1" name="DirectorITG2" skipped="0" tests="3" time="0.1355">
-		<testcase name="FileCheck: DesktopNotificationCenter" time="0.045100">
+		<testcase name="FileCheck: DesktopNotificationCenter" time="0.045100"/>
 		<testcase name="FileCheck: PropertyServer" time="0.045200"/>
 		<testcase name="Dereks added test" time="0.045200"/>
 	</testsuite>
