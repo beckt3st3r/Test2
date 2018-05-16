@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <testsuites disabled="0" errors="0" failures="1" tests="3" time="0.1355">
-	<testsuite disabled="0" errors="0" failures="1" name="DirectorITG2" skipped="0" tests="3" time="0.1355">
+	<testsuite disabled="0" errors="0" failures="1" name="Device2" skipped="0" tests="3" time="0.1355">
 		<testcase name="FileCheck: DesktopNotificationCenter" time="0.045100">
 			<failure message="Invalid File 'DNC.exe'." type="failure"/>
 		</testcase>
