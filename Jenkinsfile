@@ -38,7 +38,7 @@ pipeline {
           }
           
           steps {
-            build(job: 'ParamItem2', parameters: [string(name: 'Str2', value: string.valueOf(Str2))])
+            build(job: 'ParamItem2', parameters: [string(name: 'Str2', value: String.valueOf(Str2))])
           }
         }
       }
